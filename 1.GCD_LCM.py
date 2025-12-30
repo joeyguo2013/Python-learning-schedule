@@ -13,7 +13,7 @@ for i in range(1, a + 1):
 number = 0
 while True:
     if common_divisor_list[number] > common_divisor:
-        common_divisor = common_divisor_list
+        common_divisor = common_divisor_list[number]
         number += 1
     else:
         break
