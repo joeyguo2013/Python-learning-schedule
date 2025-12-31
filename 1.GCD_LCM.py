@@ -1,25 +1,30 @@
 #input number
 while True:
-    a = input('please input number A ')
-    if not a.isdigit() or int(a) == 0 :
-        print("please don't input character and 0")
+    while True:
+        a = input('please input number A ')
+        if not a.isdigit() or int(a) == 0 :
+            print("please don't input character and 0")
+        else:
+            break
+    a = int(a)
+    while True:
+        b = input('please input number B ')
+        if not b.isdigit() or int(b) == 0 :
+            print("please don't input character and 0")
+        else:
+            break
+    b = int(b)
+    if a > b:
+        a, b = b, a
+    if b - a > 10000:
+        print('your computer cannot do this!!!!it was so big!!!')
     else:
         break
-a = int(a)
-while True:
-    b = input('please input number B ')
-    if not b.isdigit() or int(b) == 0 :
-        print("please don't input character and 0")
-    else:
-        break
-b = int(b)
 #Initialize
 common_divisor_list = [0] * a
 common_divisor = 0
 common_multiple = 0
 number = 0
-if a > b:
-    a, b = b, a
 #GCD
 for i in range(1, a + 1):
     if a % i == 0 and b % i == 0:

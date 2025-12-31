@@ -3,6 +3,8 @@ while True:
     number = input('How far do you want to count the Fibonacci sequence?')
     if not number.isdigit() or int(number) == 0 :
         print("please don't input character and 0")
+    elif int(number) > 10000:
+        print('your computer cannot do this!!!!it was so big!!!')
     else:
         break
 number = int(number)
