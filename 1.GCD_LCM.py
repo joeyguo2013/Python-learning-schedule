@@ -1,14 +1,14 @@
 #input number
 while True:
     a = input('please input number A ')
-    if a == 0 or not a.isdigit():
+    if not a.isdigit() or int(a) == 0 :
         print("please don't input character and 0")
     else:
         break
 a = int(a)
 while True:
     b = input('please input number B ')
-    if b == 0 or not b.isdigit():
+    if not b.isdigit() or int(b) == 0 :
         print("please don't input character and 0")
     else:
         break
