@@ -5,12 +5,12 @@ while True:
         print("please don't input character and 0")
     else:
         break
-number = int(number) + 1
-Fibonacci_list =[0] * (number - 1)
+number = int(number)
+Fibonacci_list =[0] * number
 
 
 #Fibonacci sequence
-for i in range(0, number - 1):
+for i in range(0, number):
     if i == 0 or i == 1:
         Fibonacci_list[i] = 1
     else:
