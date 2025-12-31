@@ -33,7 +33,7 @@ while True:
     else:
         break
 #LCM
-number = 1
+number = a
 while common_multiple == 0:
     if number % a == 0 and number % b == 0:
         common_multiple = number
