@@ -2,6 +2,6 @@
 one = 10
 five = 0
 for i in range(4):
-    one =+ 2
+    one += 2
 five = one
 print(five)
