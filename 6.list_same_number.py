@@ -14,8 +14,8 @@ list_number = 0
 one = [0] * number_one
 two = [0] * number_one
 number_two = 0
-same = [0] * number_one
-different = [0] * number_one
+same = [0] * (number_one * number_one)
+different = [0] * (number_one * number_one)
 same_number = 0
 different_number = 0
 
@@ -39,14 +39,13 @@ while list_number < number_one:
         number = int(number)
         two[list_number] = number
         list_number += 1
-for i in range(number_one):
-    for k in range(number_one):
-        if one[i] == two[k]:
-            same[same_number] = two[k]
-            same_number += 1
-        else:
-            different[different_number] = two[k]
-            different_number += 1
+for k in range(number_one):
+    if two[k] in one:
+        same[same_number] = two[k]
+        same_number += 1
+    else:
+        different[different_number] = two[k]
+        different_number += 1
 while 0 in same:
     same.remove(0)
 while 0 in different:
